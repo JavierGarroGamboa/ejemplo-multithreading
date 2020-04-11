@@ -1,6 +1,6 @@
 # Ejemplo de Multi-Hilos
 
-[Presentación de Multi-Hilos]: https://docs.google.com/presentation/d/17d8v_SIISXmbSzzQOz8zVEr5YMDnFbYGopM00RqAFdM/edit?usp=sharing
+[Presentación de Multi-Hilos](https://docs.google.com/presentation/d/17d8v_SIISXmbSzzQOz8zVEr5YMDnFbYGopM00RqAFdM/edit?usp=sharing)
 
 Multi-hilos es una técnica que permite correr concurrentemente dos o mas partes de un programa, maximizando la utilización del CPU. Cada parte es llamada *hilo*.
 
