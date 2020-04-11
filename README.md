@@ -1,12 +1,12 @@
 # Ejemplo de Multi-Hilos
 
-[Presentación de Multi-Hilos](https://docs.google.com/presentation/d/17d8v_SIISXmbSzzQOz8zVEr5YMDnFbYGopM00RqAFdM/edit?usp=sharing)
+[Presentación de Multi-Hilos]: https://docs.google.com/presentation/d/17d8v_SIISXmbSzzQOz8zVEr5YMDnFbYGopM00RqAFdM/edit?usp=sharing
 
 Multi-hilos es una técnica que permite correr concurrentemente dos o mas partes de un programa, maximizando la utilización del CPU. Cada parte es llamada *hilo*.
 
 Hay dos formas de crear aplicaciones multi-hilos en Java:
 
-## Forma 1: Extendiendo de la clase *Thread*
+##           Thread
 
 ### Constructores de la clase Thread
 
@@ -28,9 +28,25 @@ Hay dos formas de crear aplicaciones multi-hilos en Java:
 | sleep()       | Dormir el hilo por un tiempo definido    |
 | start()       | Empezar el hilo llamando al método run() |
 
-### Ejemplo
+### Finalizar un Hilo
 
-#### Archivo *ExtendedExample.java*
+Un hilo termina debido a las siguientes razones:
+
+- El subproceso finaliza cuando el método *run ()* finaliza su ejecución.
+- Cuando el hilo arroja una Excepción o Error que no está siendo atrapado en el programa.
+- El programa Java se completa o finaliza.
+- Otro hilo llama a los métodos *stop ()*.
+
+### Formas para crear un Hilo
+
+1. Extendiendo de la clase *Thread*
+2. Implementando de la interfaz *Runnable*
+
+## Ejemplos
+
+### Forma 1: Extendiendo de la clase *Thread*
+
+#### *ExtendedExample.java*
 
 ```java
 package cr.una.multithread;
@@ -63,11 +79,9 @@ public class ExtendExample extends Thread {
 
 - Este ejemplo lo que hace es mostrar en la consola el nombre del hilo y el ID en donde esta corriendo.
 
-## Forma 2: Implementando de la interfaz *Runnable*
+### Forma 2: Implementando de la interfaz *Runnable*
 
-### Ejemplo
-
-#### Archivo *ImplementExample.java*
+#### *ImplementExample.java*
 
 ```java
 package cr.una.multithread;
@@ -111,9 +125,9 @@ public class ImplementExample implements Runnable {
 
 - Este ejemplo lo que hace es mostrar en la consola el nombre del hilo y el ID en donde esta corriendo.
 
-## Corriendo la aplicación
+### Corriendo la aplicación
 
-### Archivo *ThreadMainExample.java*
+#### *ThreadMainExample.java*
 
 ```java
 import cr.una.multithread.ExtendExample;
