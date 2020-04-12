@@ -55,7 +55,11 @@ Un hilo termina debido a las siguientes razones:
 1. Extendiendo de la clase *Thread*
 2. Implementando de la interfaz *Runnable*
 
-## Ejemplos
+## Sincronización
+
+
+
+## Descripción de los ejemplos
 
 ### Forma 1: Extendiendo de la clase *Thread*
 
