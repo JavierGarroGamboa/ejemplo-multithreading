@@ -23,7 +23,7 @@ Hay dos formas de crear aplicaciones multi-hilos en Java:
 | getName()     | Obtener el nombre del hilo               |
 | getPriority() | Retornar la prioridad del hilo           |
 | isAlive()     | Verificar si el hilo aun esta activo     |
-| join()        | Esperar que el hilo termine              |
+| join()        | Espera a que el hilo termine             |
 | run()         | Punto de entrada al Hilo                 |
 | sleep()       | Dormir el hilo por un tiempo definido    |
 | start()       | Empezar el hilo llamando al método run() |
@@ -54,10 +54,6 @@ Un hilo termina debido a las siguientes razones:
 
 1. Extendiendo de la clase *Thread*
 2. Implementando de la interfaz *Runnable*
-
-## Sincronización
-
-
 
 ## Descripción de los ejemplos
 
