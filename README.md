@@ -1,4 +1,4 @@
-# Ejemplo de Multi-Hilos
+# Ejemplo de Multi-Hilos en Java
 
 [Presentación de Multi-Hilos](https://docs.google.com/presentation/d/17d8v_SIISXmbSzzQOz8zVEr5YMDnFbYGopM00RqAFdM/edit?usp=sharing)
 
@@ -28,7 +28,20 @@ Hay dos formas de crear aplicaciones multi-hilos en Java:
 | sleep()       | Dormir el hilo por un tiempo definido    |
 | start()       | Empezar el hilo llamando al método run() |
 
-### Finalizar un Hilo
+### Ciclo de vida del un *Thread* 
+
+![Ciclo de vida de un Thread](/Users/mguzmana/Documents/@Work/UNA/EIF206-Progra-III/Ejemplos/ejemplo-multithreading/Java-Life-Cycle-Thread.png)
+
+- **New:** Cuando un *thread* es creado, es un nuevo estado.
+- **Runnable:** Un hilo está esperando su turno para ser elegido para su ejecución. El subprogramador selecciona el subproceso en función de las prioridades del subproceso. Los métodos `start ()` registran un hilo en un planificador de hilos.
+- **Running:** El procesador está ejecutando el hilo. El hilo se ejecuta hasta que se bloquea o abandona su turno con `Thread.yield ()`. Debido a la sobrecarga del cambio de contexto, el `yield()` no debe usarse con mucha frecuencia. Los métodos `wait ()`, `sleep ()` y `join ()` hacen que el hilo deje el estado de ejecución.
+- **Waiting**: Un hilo espera a que otro hilo realice una tarea.
+- **Sleeping:** Los subprocesos de Java se ven obligados a dormir (suspendidos) con este método sobrecargado: `Thread.sleep (milisegundos)`, `Thread.sleep (milisegundos, nanosegundos)`.
+- **Blocked on I/O:** Un subproceso se bloquea en algún procesamiento de E/S externo para finalizar. El subproceso se moverá a **Runnable** después de la condición de E / S, como leer bytes de datos.
+- **Blocked on synchronization: **El subproceso se moverá a **Runnable** cuando se adquiera un bloqueo.
+- **Terminated: **El hilo ha terminado su trabajo.
+
+### Finalizar un *Thread*
 
 Un hilo termina debido a las siguientes razones:
 
