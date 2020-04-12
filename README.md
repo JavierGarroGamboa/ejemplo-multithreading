@@ -30,7 +30,7 @@ Hay dos formas de crear aplicaciones multi-hilos en Java:
 
 ### Ciclo de vida del un *Thread* 
 
-![Ciclo de vida de un Thread](/Users/mguzmana/Documents/@Work/UNA/EIF206-Progra-III/Ejemplos/ejemplo-multithreading/Java-Life-Cycle-Thread.png)
+![Ciclo de vida de un Thread](Java-Life-Cycle-Thread.png)
 
 - **New:** Cuando un *thread* es creado, es un nuevo estado.
 - **Runnable:** Un hilo está esperando su turno para ser elegido para su ejecución. El subprogramador selecciona el subproceso en función de las prioridades del subproceso. Los métodos `start ()` registran un hilo en un planificador de hilos.
