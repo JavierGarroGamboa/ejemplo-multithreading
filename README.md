@@ -38,8 +38,8 @@ Hay dos formas de crear aplicaciones multi-hilos en Java:
 - **Waiting**: Un hilo espera a que otro hilo realice una tarea.
 - **Sleeping:** Los subprocesos de Java se ven obligados a dormir (suspendidos) con este método sobrecargado: `Thread.sleep (milisegundos)`, `Thread.sleep (milisegundos, nanosegundos)`.
 - **Blocked on I/O:** Un subproceso se bloquea en algún procesamiento de E/S externo para finalizar. El subproceso se moverá a **Runnable** después de la condición de E / S, como leer bytes de datos.
-- **Blocked on synchronization: **El subproceso se moverá a **Runnable** cuando se adquiera un bloqueo.
-- **Terminated: **El hilo ha terminado su trabajo.
+- **Blocked on synchronization:** El subproceso se moverá a **Runnable** cuando se adquiera un bloqueo.
+- **Terminated:** El hilo ha terminado su trabajo.
 
 ### Finalizar un *Thread*
 
@@ -48,7 +48,7 @@ Un hilo termina debido a las siguientes razones:
 - El subproceso finaliza cuando el método *run ()* finaliza su ejecución.
 - Cuando el hilo arroja una Excepción o Error que no está siendo atrapado en el programa.
 - El programa Java se completa o finaliza.
-- Otro hilo llama a los métodos *stop ()*.
+- ~~Otro hilo llama a los métodos *stop ()*. ~~
 
 ### Formas para crear un Hilo
 
