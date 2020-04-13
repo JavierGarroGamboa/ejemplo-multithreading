@@ -48,7 +48,7 @@ Un hilo termina debido a las siguientes razones:
 - El subproceso finaliza cuando el método *run ()* finaliza su ejecución.
 - Cuando el hilo arroja una Excepción o Error que no está siendo atrapado en el programa.
 - El programa Java se completa o finaliza.
-- ~~Otro hilo llama a los métodos *stop ()*. ~~
+- ~~Otro hilo llama a los métodos stop ().~~
 
 ### Formas para crear un Hilo
 
