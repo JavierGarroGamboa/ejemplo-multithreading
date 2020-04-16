@@ -17,9 +17,9 @@ public class ThreadMainExample {
 
     static void TestImplementExample() {
         Thread implementExample1 = new Thread(new ImplementExample("T1"));
-        Thread implementExample2 = new Thread(new ImplementExample("T1"));
-        Thread implementExample3 = new Thread(new ImplementExample("T1"));
-        Thread implementExample4 = new Thread(new ImplementExample("T1"));
+        Thread implementExample2 = new Thread(new ImplementExample("T2"));
+        Thread implementExample3 = new Thread(new ImplementExample("T3"));
+        Thread implementExample4 = new Thread(new ImplementExample("T4"));
 
         implementExample1.start();
         implementExample2.start();
